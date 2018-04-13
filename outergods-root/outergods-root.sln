@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "outergods-root", "outergods-root.csproj", "{538A401C-835D-7BBC-54D3-180F6ED6459D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "outergods-root.Editor", "outergods-root.Editor.csproj", "{30772A0F-E994-8468-8A24-77E8E3580B92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{538A401C-835D-7BBC-54D3-180F6ED6459D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{538A401C-835D-7BBC-54D3-180F6ED6459D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{538A401C-835D-7BBC-54D3-180F6ED6459D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30772A0F-E994-8468-8A24-77E8E3580B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30772A0F-E994-8468-8A24-77E8E3580B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30772A0F-E994-8468-8A24-77E8E3580B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30772A0F-E994-8468-8A24-77E8E3580B92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
