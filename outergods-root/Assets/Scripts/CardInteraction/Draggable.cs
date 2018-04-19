@@ -9,10 +9,10 @@ namespace OuterGods.CardInteraction
     public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
         #region Variables
-        public Transform parentToReturnTo = null; // Parent drop zone which the card will return to on EndDrag
-        public Transform cardPlaceholderParent = null;
+        public Transform parentToReturnTo; // Parent drop zone which the card will return to on EndDrag
+        public Transform cardPlaceholderParent;
 
-        private GameObject cardPlaceholder = null;
+        private GameObject cardPlaceholder;
         #endregion
 
         #region OnBeginDrag
@@ -21,7 +21,7 @@ namespace OuterGods.CardInteraction
             cardPlaceholder = new GameObject();
             cardPlaceholder.transform.SetParent(transform.parent); // Sets the parent of the placeholder to the parent of this gameobject, e.g. the drop zone this gameobject is in
             // Adds a LayoutElement to the placeholder
-            LayoutElement cardLayoutElement = cardPlaceholder.AddComponent<LayoutElement>();
+            var cardLayoutElement = cardPlaceholder.AddComponent<LayoutElement>();
             cardLayoutElement.preferredWidth = GetComponent<LayoutElement>().preferredWidth;
             cardLayoutElement.preferredHeight = GetComponent<LayoutElement>().preferredHeight;
             cardLayoutElement.flexibleHeight = 0;
