@@ -9,7 +9,10 @@ namespace OuterGods.CardInteraction
     public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
         #region Variables
+        [HideInInspector]
         public Transform parentToReturnTo; // Parent drop zone which the card will return to on EndDrag
+
+        [HideInInspector]
         public Transform cardPlaceholderParent;
 
         private GameObject cardPlaceholder;
